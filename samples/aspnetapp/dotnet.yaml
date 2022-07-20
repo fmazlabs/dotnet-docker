@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet
+  labels:
+    app: dotnet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dotnet
+  template:
+    metadata:
+      labels:
+        app: dotnet
+    spec:
+      containers:
+      - name: dotnet
+        image: munkys123/dotnet:latest
+        imagePullPolicy: Always
