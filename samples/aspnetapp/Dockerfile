@@ -1,3 +1,3 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
-COPY --from=build /app ./
+COPY COPY . /tmp
 ENTRYPOINT ["dotnet", "aspnetapp.dll"]
