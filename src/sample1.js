@@ -1,4 +1,4 @@
-//this file has no relation to the repo. Done for dummy js files to demonstrate 
+//this file has no relation to the repo. Done for dummy js files to demonstrate demo
 var webpack = require('webpack');
 
 module.exports = {
